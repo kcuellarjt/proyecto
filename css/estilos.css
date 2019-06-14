@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family: sasans-serif;      
+}
+
+header {
+    width: 100%;
+    background: #4C74AB;
+}
+
+#BTMENU{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex; 
+}
+
+.menu li{ 
+    border-right: 1px solid #fff;
+}
+
+.menu li a{
+    
+    display: block;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+main{
+    padding: 20px;
+}
+
+main h1{
+    padding: 1px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    background: #4C74AB;
+    box-shadow: 0 0 0 3px rgba(89,89,165,0.2)
+}
+
+@media (max-width: 768px){
+   
+    header label{
+        display: block;
+    }
+    
+    .menu {
+        position: absolute;
+        background: #4C74AB;
+        width: 70px;
+        margin-left: -70%;
+        transition: all 0.5s;  
+    }
+    
+    .menu ul{
+        flex-direction: column;       
+    }
+    
+    ,menu li {
+        border-top: 1px solid #fff;
+    }
+    
+    #BTMENU:checked ~ .menu{
+        margin: 0;
+    }
+
+}
+
+/* Formulario */
+
+.content-form{
+    max-width: 400px;
+    height: auto;
+    background-color: rgba(89,89,165,0.1);
+    margin: 5% auto;
+    padding-bottom: 1rem;
+}
+
+.formulario{
+    width: 400px;
+    text-align: center;
+    padding: 2rem 0 1rem;
+    border-top: solid .4rem #4C74AB;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+
+}
+
+.formulario h2{
+    font-weight: bold;
+    color: #CAC8C8;
+    font-size: 18px;
+}
+
+h2 span{
+    color: #4C74AB
+}
+
+.registro{
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+}
+
+.input{
+    background-color: #EFEFEF;
+    padding: .5rem;
+    margin: .5rem;
+    border: none;
+    border-bottom: solid #C8C8C8 .2rem;
+    transition: all .5s;
+}
+.input:focus{
+    border-bottom: solid #4C74AB .2rem;
+}

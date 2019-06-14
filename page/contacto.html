@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/estilos-modal.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/validar.js"></script>
+    
+	<title>Contacto</title>
+</head>
+
+<body>
+    
+    <header>
+        <input type="checkbox" id="BTMENU"/>
+        <label for="BTMENU" ><img src="../img/menu.png"/></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Skills</a></li>
+                <li><a href="estudios.html">Estudio y Experiencia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+    
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close" onclick="javascript:CloseModal();">X</a>
+        <h2>Envio de datos</h2>
+        <p>Los datos se han enviado satisfactoriamente.</p>
+        <p>En breve nos pondremos en contacto.</p>
+      </div>
+    </div>
+    
+    
+    <main>
+
+        <h1>Contacto:</h1>  
+        
+        <div class="content-form">
+            <div class="formulario">
+                <h2>Formulario<span>Contacto</span></h2>
+            </div>
+            <form action="" method="POST" onsubmit="return val();" class="registro">
+                
+                <img src="../img/usuario.png" alt="imagen" width="24" height="24" style="vertical-align: middle">
+                <input type="text" class="input" placeholder="Kevin Cuellar" id="C1" name="c1" maxlength="50" onkeypress="return valletra(event)" onblur="limpiar()" required autofocus><br>
+
+                <img src="../img/email.png" alt="imagen" width="24" height="24" style="vertical-align: middle">
+                <input type="email" class="input" placeholder="kcuellar.jt@hotmail.com" id="C2" name="c2" required><br>
+
+                <img src="../img/msm.png" alt="imagen" width="24" height="24" style="vertical-align: middle"><br>
+                <textarea  class="input" placeholder="Me podrias ayudar con ..." rows="5" cols="20" name="C3" id="C3" required></textarea><br>
+               
+                <button type="submit" class=""><img src="../img/enviar.png" alt="imagen" width="24" height="24" style="vertical-align: middle">Enviar</button>
+                
+            </form> 
+             
+        </div>
+    </main>
+    
+</body>
+</html>
